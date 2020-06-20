@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="reg.css">
+<link rel="stylesheet" type="text/css" href="registerstyle.css">
 </head>
 <body>
 <div class="center">
