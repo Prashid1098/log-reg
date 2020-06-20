@@ -10,8 +10,8 @@
 <input type="text" name="uname"><br><br>
 &nbsp;&nbsp;Password<br>&nbsp;&nbsp;
 <input type="password" name="password"><br><br>
-&nbsp;&nbsp;<button type="submit" class="log1">Log In</button><br>
-<p>&nbsp;&nbsp;Don't have an account? <a href="register.php">Register</a></p>
+&nbsp;&nbsp;<button type="submit" class="log1">Log In</button><br><br>
+<p>&nbsp;&nbsp;Don't have an account? <a href="registernow.php">Register</a></p>
 </form>
 </body>
 </html>
