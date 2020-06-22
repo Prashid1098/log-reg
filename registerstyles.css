@@ -1,0 +1,29 @@
+#heading1{
+    text-align:center;
+    background-color:#00CED1;
+    color:white;
+    margin-top:0px;
+  }
+  .center{
+         background-color:none;
+         margin:auto;
+         width:35%;
+         height:40%;
+         border:1px solid #73AD21;
+         color:black;
+  }
+  input[type=text],input[type=password]{
+         width:60%;
+         padding:3px;
+         display:inline-block;
+         border-color:#000000;
+         background: none;
+         margin:auto;
+         }
+  p{
+         margin-top:0px;
+  }
+  .registerbtn{
+         background-color:#00CED1;
+         color:white;
+  }
