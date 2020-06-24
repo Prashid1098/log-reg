@@ -9,9 +9,9 @@ $errors=array();
 $db = mysqli_connect('localhost','root','','diary1');
   if(isset($_POST['register']))
   {
-    $Username=mysqli_real_escape_string($db,$_POST['Username']);
-    $Email=mysqli_real_escape_string($db,$_POST['Email']);
-    $Password=mysqli_real_escape_string($db,$_POST['Password']);
+    $Username=($_POST['Username']);
+    $Email=($_POST['Email']);
+    $Password=md5($_POST['Password']);
 
     if(empty($Username)){
       array_push($errors,"Username is required");
@@ -37,28 +37,29 @@ $db = mysqli_connect('localhost','root','','diary1');
 
   if(isset($_POST['login']))
     {
-      $Username=mysqli_real_escape_string($db,$_POST['Username']);
-      $Password=mysqli_real_escape_string($db,$_POST['Password']);
+      $Username=($_POST['Username']);
+      $Password=md5($_POST['Password']);
 
       if(empty($Username)){
-        array_push($errors,"Username is required");
+        array_push($errors,"Username is required*");
       }
       if(empty($Password)){
-        array_push($errors,"Password is required");
+        array_push($errors,"Password is required*");
     } 
       if (count($errors)==0)
       {
         $Password = md5($Password);
-          $sql = "SELECT * from user WHERE Username='$Username' AND Password='$Password' ";
+          $query = "SELECT * from user WHERE Username='$Username' AND Password='$Password' ";
           $result= mysqli_query($db,$query);
           if(mysqli_num_rows($result)==1)
           {
           $_SESSION['Username']=$Username;
+          $_SESSION['Password']=$Password;
           $_SESSION['success']="You are now logged in";
           header('location:index.php');
       }else
       {
-        array_push($errors,"is invalid");
+        array_push($errors,"Username or Password is invalid");
         header('location:login1.php');
       }
     }

@@ -1,18 +1,21 @@
 <?php include('server.php');?>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="loginstyle.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
 <title>Home Page</title>
 </head>
 <body>
-<h2 id="h">Home Page</h2>
-<p><b><font size=5>You are successfully logged in</font></b></p>
-<div class="center">
+<div class="header">
+<h1>Home Page</h1>
+</div>
+<div class="content">
 <?php if(isset($_SESSION['success'])):?>
+<div class="error success">
 <?php 
     echo $_SESSION['success'];
     unset($_SESSION['success']);
     ?>
+</div>
     <?php endif ?>
     <?php if(isset($_SESSION['Username'])): ?>
     <p>Welcome <strong><?php echo $_SESSION['Username']; ?></strong></p>

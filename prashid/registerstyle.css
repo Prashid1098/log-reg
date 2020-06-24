@@ -1,19 +1,22 @@
 #h{
 	background-color:#0099cc;
+	border: 1px solid #595f58;
 	color:white;
 	text-align:center;
 	margin-top:0px;
 	height:15%;
+	font-family: Calibri;
+	border-radius:5px;
 }
 .center{
 	background-color:white;
 	width:40%;
 	height:50%;
-	border:1px solid #73AD21;
+	border:1px solid #595f58;
 	color:black;
 	margin:auto;
 	margin-top:100px;
-	border-radius:5px;
+	border-radius:10px;
 }
 input[type=text],input[type=password]{
 	width:80%;
@@ -28,7 +31,7 @@ p{
 	background-color:#0099cc;
 	color:white;
     padding:5px;
-    border-radius:5px;
+    border-radius:10px;
 }
 body{
     background-color: gray;
