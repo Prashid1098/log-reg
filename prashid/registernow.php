@@ -7,8 +7,9 @@
 </head>
 <body>
 <div class="center">
-<form method="post" action="registernow.php">
 <h1 id="h">Register Now</h1>
+<form method="post" action="registernow.php">
+<?php include('error.php');?>
 &nbsp;&nbsp;Username<br>&nbsp;&nbsp;<input type="text" name="Username"><br>
 &nbsp;&nbsp;Email<br>&nbsp;&nbsp;<input type="text" name="Email"><br>
 &nbsp;&nbsp;Password<br>&nbsp;&nbsp;<input type="Password" name="Password"><br><br>
