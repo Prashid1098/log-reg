@@ -20,6 +20,7 @@
     <?php if(isset($_SESSION['Username'])): ?>
     <p>Welcome <strong><?php echo $_SESSION['Username']; ?></strong></p>
     <p><a href="index.php?logout='1' " style="color:red;">Logout</a></p>
+    <p><a class="next" href="diarypage.php">Start Diary</a></p>
     <?php endif ?>
     </div>
     </body>

@@ -1,9 +1,9 @@
 body{
     font-size: 120%;
-    background: #7f887c;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("diary.jpeg");
     height:100%;
 }
 .header{
@@ -47,11 +47,10 @@ body{
     border: 1px solid #3c763d;
     margin-bottom: 20px;
 }
-.aa{
-    border: 1px solid #032c2e;
-    background-color:#032c2e;
+a.next{
+    background-color: #0099CC;
     color:white;
-    text-align: center;
-    font-family:Arial;
-    margin-top: 20px;
+    padding:5px;
+	border-radius:10px;
 }
+

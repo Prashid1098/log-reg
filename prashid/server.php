@@ -30,7 +30,7 @@ $db = mysqli_connect('localhost','root','','diary1');
     mysqli_query($db,$sql);
     $_SESSION['Username']=$Username;
     $_SESSION['success']="You are now logged in";
-    header('location:index.php');
+    header('location:diary.php');
     }
   }
 
@@ -49,14 +49,13 @@ $db = mysqli_connect('localhost','root','','diary1');
       if (count($errors)==0)
       {
         $Password = md5($Password);
-          $query = "SELECT * from user WHERE Username='$Username' AND Password='$Password' ";
+          $query = "SELECT *FROM user WHERE Username='$Username' AND Password='$Password' ";
           $result= mysqli_query($db,$query);
           if(mysqli_num_rows($result)==1)
           {
           $_SESSION['Username']=$Username;
-          $_SESSION['Password']=$Password;
           $_SESSION['success']="You are now logged in";
-          header('location:index.php');
+          header('location:diarypage.php');
       }else
       {
         array_push($errors,"Username or Password is invalid");
