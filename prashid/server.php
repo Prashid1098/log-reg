@@ -11,7 +11,7 @@ $db = mysqli_connect('localhost','root','','diary1');
   {
     $Username=($_POST['Username']);
     $Email=($_POST['Email']);
-    $Password=md5($_POST['Password']);
+    $Password=($_POST['Password']);
 
     if(empty($Username)){
       array_push($errors,"Username is required");
@@ -30,6 +30,7 @@ $db = mysqli_connect('localhost','root','','diary1');
     mysqli_query($db,$sql);
     $_SESSION['Username']=$Username;
     $_SESSION['success']="You are now logged in";
+    $res=$_SESSION['success'];
     header('location:diary.php');
     }
   }
@@ -38,7 +39,7 @@ $db = mysqli_connect('localhost','root','','diary1');
   if(isset($_POST['login']))
     {
       $Username=($_POST['Username']);
-      $Password=md5($_POST['Password']);
+      $Password=($_POST['Password']);
 
       if(empty($Username)){
         array_push($errors,"Username is required*");
@@ -67,5 +68,6 @@ $db = mysqli_connect('localhost','root','','diary1');
         session_destroy();
         unset($_SESSION['Username']);
         header('location:login1.php');
+
       }
       ?>
