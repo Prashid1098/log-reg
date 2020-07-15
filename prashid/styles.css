@@ -3,8 +3,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("diary.jpeg");
+    background-image: url("diary2.jpeg");
     height:100%;
+    margin-top:10%;
 }
 .header{
     width: 30%;
@@ -21,6 +22,7 @@ body{
 }
 .content{
     width: 30%;
+    height:30%;
     margin: 0px auto;
     padding: 20px;
     border: 1px solid #595c51;
@@ -48,6 +50,12 @@ body{
     margin-bottom: 20px;
 }
 a.next{
+    background-color: #0099CC;
+    color:white;
+    padding:5px;
+	border-radius:10px;
+}
+#prev{
     background-color: #0099CC;
     color:white;
     padding:5px;
