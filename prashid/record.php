@@ -48,13 +48,16 @@ height:400px;
     border-radius:4px;
 }
 #show:hover{
-	background-color:#0099cc;
+	background-color:blue;
     color:white;
 }
 #date{
     width:150px;
     height:30px;
     color:blue;
+}
+#ds{
+    background-color:yellow;
 }
 <?php include('record.css') 
 ?>
@@ -64,7 +67,7 @@ height:400px;
 <body>
 <h1>SEARCH YOUR ENTRY DATEWISE</h1>
 <br><br>
-<form action="record.php" method="POST">
+<form action="record.php" method="POST" id="ds">
 <input type="date" name="date" id="date">
 <input type="submit" name="submit" id="show" value="Show Entry">
 </form>
@@ -81,7 +84,7 @@ $query = " SELECT * FROM diary WHERE date='$_POST[date]' ";
 $query_run = mysqli_query($conn,$query);
 ?>
 <div class="update">
-<form method="POST" action="edited.php">
+<form method="POST" action="record.php">
 <?php
 while($row = mysqli_fetch_array($query_run))
 {
@@ -89,11 +92,24 @@ while($row = mysqli_fetch_array($query_run))
     echo "<input type = textarea id=t name=textarea value='".$row['textarea']."'>";
     echo "<input type=hidden name=id value='".$row['id']."'><br><br>";
     echo "<b>To update the entry after editing,Click Here"."&nbsp;&nbsp;</b>";
-    echo "<input type=submit name=submit value='Edit & Submit' id=edit>";
+    echo "<input type=submit name=edit value='Update & Submit' id=edit><br>";
     echo "</form>";
+}
+}
+if(isset($_POST['edit'])){
+    $sql="UPDATE diary SET textarea ='$_POST[textarea]',date='$_POST[date]' WHERE id ='$_POST[id]' ";
+$query_run1=mysqli_query($conn,$sql);
+if($query_run1)
+{
+    echo "<script type='text/javascript'>alert('Data Updated ')</script>";
+}
+else
+{
+    echo "<script type='text/javascript'>alert('Data Not Updated ')</script>";
 }
 }
 ?>
 </div>
+<a href="diarypage.php" class="return">RETURN</a>
 </body>
 </html>

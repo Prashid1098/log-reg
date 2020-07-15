@@ -6,6 +6,7 @@
 <title>Register Page</title>
 </head>
 <body>
+</home>
 <div class="center">
 <h1 id="h">Register Now</h1>
 <form method="post" action="registernow.php">

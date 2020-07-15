@@ -29,9 +29,9 @@ $db = mysqli_connect('localhost','root','','diary1');
 
     mysqli_query($db,$sql);
     $_SESSION['Username']=$Username;
-    $_SESSION['success']="You are now logged in";
+    $_SESSION['success']="You are now registered";
     $res=$_SESSION['success'];
-    header('location:diary.php');
+    header('location:welc.php');
     }
   }
 
