@@ -8,7 +8,8 @@ body{
     margin-left: 150px;
     border: 3px dashed black;
     border-radius: 10px;
-    width:550px;
+    width:500px;
+    
 }
 nav a{
     float: right;
@@ -18,7 +19,7 @@ nav a{
     font-size: 17px;
     overflow:hidden;
     background-color:white; 
-    margin: 4px;     
+    margin: 5px;     
 }
 nav a:hover{
     background-color:black;

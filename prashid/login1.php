@@ -13,7 +13,7 @@
 &nbsp;&nbsp;Username<br>&nbsp;&nbsp;<input type="text" name="Username"><br><br>
 &nbsp;&nbsp;Password<br>&nbsp;&nbsp;<input type="password" name="Password"><br><br>
 &nbsp;&nbsp;<button type="submit" name="login" class="log1">Log In</button><br><br>
-<p>&nbsp;&nbsp;Don't have an account? <a href="registernow.php">Register</a></p>
+<p>&nbsp;&nbsp;Don't have an account? <a href="registernow.php">Register</a><br><br>
 </form>
 </div>
 </body>

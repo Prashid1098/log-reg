@@ -14,6 +14,9 @@ if(isset($_POST['submit'])){
 $sql1 = "INSERT INTO contacts (firstname,lastname,country,subject)
                     VALUES ('$firstname','$lastname','$country','$subject')";
                     mysqli_query($db1,$sql1);
-                    header('location:diary.php');
+                    header('location:contact.php');
+}
+if(isset($_POST['logt'])){
+    header('location:diary.php');
 }
 ?>

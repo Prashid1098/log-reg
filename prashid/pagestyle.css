@@ -10,18 +10,18 @@ background-repeat: no repeat;
 height: 100%;
 }
 #heading1{
-   text-align: center;
    color:black;
    font-style: italic;
+   text-align: left;
 }
 .topnav a{
-float: left;
+float: right;
 display: block;
 color: black;
 padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
-margin: 4px;
+margin: 5px;
 overflow:hidden;
 background-color: #e9e9e9;
 }
@@ -29,22 +29,11 @@ background-color: #e9e9e9;
 background-color:black;
 color:yellow;
 }
-.topnav .search-container{
+.topnav .search-container {
 float: right;
-background-color:none;
-}
-.topnav input[type=text]{
-padding: 6px;
-margin-top: 8px;
-font-size: 17px;
-border: none;
-}
-.topnav .search-container button{
-float: right;
-padding: 6px 10px;
-margin-top: 8px;
-margin-right: 16px;
-background: #ddd;
+display:block;
+margin-top: 0px;
+padding: 14px 16px;
 font-size: 17px;
 border: none;
 cursor: pointer;
@@ -74,7 +63,7 @@ border: 1px solid #ccc;
 }
 details{
    color:darkblue;
-   margin-left: 45%;
+   text-align: left;
 }
 #submit{
   background-color:white;
@@ -90,3 +79,29 @@ details{
       color:white;
 
   }
+  #sub{
+      float: right;
+      background-color:white;
+      color:black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+  }
+  #sub:hover{
+   background-color:red;
+   color:white;
+  }
+  span{
+   visibility: hidden;
+   width: 120px;
+   background-color:brown;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;
+  }
+
+  
+  

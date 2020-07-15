@@ -1,3 +1,5 @@
+<?php include('diaryserver.php') 
+?>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="pagestyle.css">
@@ -5,35 +7,26 @@
 </head>
 <body>
 <header>
-
 <div class="topnav">
 <a class="active" href="diary.php">HOME</a>
 <a href="about.html">ABOUT</a>
 <a href="contact.php">CONTACT</a>
-<br>
-<div class="search-container">
-<form>
-<input type="text" placeholder="Search..." name="search">
-<button type="submit">Search<i class="fa fa-search"></i></button>
-</form>
+<a href="record.php">MORE</a>
 </div>
-</div>
-<details>
-<summary><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MY ENTRIES:</b><summary>
-<p>&nbsp;&nbsp;Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type= "date"></p><br><br>
-</details>
+<br><br><br>
 <h1 id="heading1"><u>TODAY'S ENTRY</u></h1><br>
-<form>
+<form method="POST" action="diarypage.php">
+<details>
+<summary><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    MY ENTRIES:</b><summary>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date("m/d/Y");  ?></p><br><br
+</details>
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="textarea" cols="152">Start typing...</textarea><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="textarea" name="textarea" placeholder="Start typing..." cols="175"></textarea><br>
 </p>
-&nbsp;&nbsp;&nbsp;&nbsp;<input id="submit" type="submit" value="submit"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input id="submit" type="submit" value="submit" name="submit">
+<input type="submit" id="sub" value="LOGOUT" name="logout">
 
 </form>
 </header>
-
-
-
-
 </body>
 </html>
