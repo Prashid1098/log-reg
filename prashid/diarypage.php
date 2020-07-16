@@ -18,7 +18,12 @@
 <form method="POST" action="diarypage.php">
 <details>
 <summary><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    MY ENTRIES:</b><summary>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date("m/d/Y");  ?></p><br><br
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php
+$s1=time();
+$date=Date("d-m-Y",$s1);
+echo"&nbsp;&nbsp;&nbsp;<b>Today's date :$date</font></b><br>";
+?>
+</p><br><br
 </details>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;<textarea id="textarea" name="textarea" placeholder="Start typing..." cols="175"></textarea><br>

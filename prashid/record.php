@@ -11,6 +11,14 @@ h1{
     font-style:italic;
     text-decoration:underline;
     text-align:center;
+    background-color:lightblue;
+}
+#se{
+    text-align:center;
+    text-decoration:underline;
+    font-size:25px;
+    word-spacing:10px;
+    background-color:yellow;
 }
 a{
     float:left;
@@ -56,17 +64,15 @@ height:400px;
     height:30px;
     color:blue;
 }
-#ds{
-    background-color:yellow;
-}
 <?php include('record.css') 
 ?>
 </style>
 </head>
 <title>Records</title>
 <body>
-<h1>SEARCH YOUR ENTRY DATEWISE</h1>
-<br><br>
+<h1>DISPLAY YOUR ENTRY DATEWISE</h1>
+<p id="se"><b>Search your diary entry by selecting a valid date</b></p>
+<br>
 <form action="record.php" method="POST" id="ds">
 <input type="date" name="date" id="date">
 <input type="submit" name="submit" id="show" value="Show Entry">
