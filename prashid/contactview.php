@@ -12,6 +12,13 @@ h1{
     font-style:italic;
     text-decoration:underline;
 }
+#se{
+    text-align:center;
+    text-decoration:underline;
+    font-size:25px;
+    word-spacing:10px;
+    background-color:lightblue;
+}
 #co{
     width:130px;
     height:30px;
@@ -65,8 +72,9 @@ a:hover{
 </head>
 <body>
 <h1>View Your Saved Contacts</h1>
-<br><br>
-<form action="contactview.php" method="POST">
+<p id="se"><b>Search your saved contacts by first or last name</b></p>
+<br>
+<form action="contactview.php" method="POST" style="background-color:yellow">
 <input type="text" name="firstname" id="co" placeholder="FirstName">
 <input type="text" name="lastname" id="co" placeholder="LastName">
 <input type="submit" name="subt" id="show" value="Check Entry"></p>
@@ -103,6 +111,7 @@ $query_run = mysqli_query($conn,$query2);
         echo "</tr>";
     }
     echo "</table>";
+    echo "<br>";
     echo "<input type=submit name=edited value=Update id=edit>";
     echo "</form>";
 }
@@ -110,7 +119,7 @@ $query_run = mysqli_query($conn,$query2);
 
 <?php 
 if(isset($_POST['edited'])){
-    $sql1="UPDATE contacts SET firstname ='$_POST[firstname]',lastname='$_POST[lastname]'  WHERE ID ='$_POST[ID]' ";
+    $sql1="UPDATE contacts SET firstname ='$_POST[firstname]',lastname='$_POST[lastname]',country='$_POST[country]',subject='$_POST[subject]'  WHERE ID ='$_POST[ID]' ";
 $query_run1=mysqli_query($conn,$sql1);
 if($query_run1)
 {

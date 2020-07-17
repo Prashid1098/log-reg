@@ -31,7 +31,8 @@ p{
 	background-color:#0099cc;
 	color:white;
     padding:5px;
-    border-radius:10px;
+	border-radius:10px;
+	cursor:pointer;
 }
 body{
     background-image: url("diary2.jpeg");

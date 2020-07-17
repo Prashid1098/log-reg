@@ -6,13 +6,15 @@
 <style>
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("diary.jpeg");
+    background-image: url("diary2.jpeg");
     background-repeat: no repeat;
     background-size: cover;
 }
 * {box-sizing: border-box;}
 h3{
   margin-left:45%;
+  font-style:italic;
+  text-decoration:underline;
 }
 
 input[type=text], select, textarea {
@@ -35,12 +37,6 @@ input[type=submit] {
   cursor: pointer;
   margin-left:47%;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
-  color:black;
-}
-
 .container {
   border-radius: 5px;
   background-color:white;

@@ -11,14 +11,13 @@ h1{
     font-style:italic;
     text-decoration:underline;
     text-align:center;
-    background-color:lightblue;
 }
 #se{
     text-align:center;
     text-decoration:underline;
     font-size:25px;
     word-spacing:10px;
-    background-color:yellow;
+    background-color:lightblue;
 }
 a{
     float:left;
@@ -63,6 +62,9 @@ height:400px;
     width:150px;
     height:30px;
     color:blue;
+}
+#ds{
+    background-color:yellow;
 }
 <?php include('record.css') 
 ?>

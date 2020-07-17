@@ -66,32 +66,24 @@ details{
    text-align: left;
 }
 #submit{
-  background-color:white;
-  color:black;
+  background-color:blue;
+  color:white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-left:45%;
 }
-  #submit:hover{
-     background-color:blue;
-      color:white;
-
-  }
   #sub{
       float: right;
-      background-color:white;
-      color:black;
+      background-color:red;
+      color:white;
       padding: 12px 20px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      margin-top:-40px;
       margin-right: 10px;
-  }
-  #sub:hover{
-   background-color:red;
-   color:white;
   }
   span{
    visibility: hidden;
@@ -101,6 +93,16 @@ details{
    text-align: center;
    border-radius: 6px;
    padding: 5px 0;
+  }
+  #upda{
+     margin-left:57.0%;
+     margin-top:-39px;
+     background-color:green;
+     color:white;
+     height:5.8%;
+     width:5%;
+     border-radius:4px;
+     cursor:pointer;
   }
 
   
