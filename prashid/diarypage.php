@@ -20,7 +20,7 @@
 <summary><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    MY ENTRIES:</b><summary>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php
 $s1=time();
-$date=Date("18-07-2020",$s1);
+$date=Date("m-d-Y",$s1);
 echo"&nbsp;&nbsp;&nbsp;<b>Today's date :$date</font></b><br>";
 ?>
 </p>
