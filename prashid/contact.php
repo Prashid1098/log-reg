@@ -11,7 +11,7 @@ body {
     background-size: cover;
 }
 * {box-sizing: border-box;}
-h3{
+h1{
   margin-left:45%;
   font-style:italic;
   text-decoration:underline;
@@ -74,12 +74,33 @@ a:hover{
 #subject{
   padding-bottom:125px;
 }
+.topnav a{
+float: right;
+display: block;
+color: black;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+margin: 5px;
+overflow:hidden;
+background-color: #e9e9e9;
+}
+.topnav a:hover{
+background-color:black;
+color:yellow;
+}
 </style>
 </head>
 <title>Contact</title>
 <body>
-<a href="diarypage.php">RETURN TO HOME</a>
-  <h3>CONTACT</h3>
+<div class="topnav">
+<a class="active" href="diary.php">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="record.php">VIEW</a>
+<a href="diarypage.php">RETURN TO DIARY</a>
+</div>
+<br>
+  <h1>CONTACT</h1>
   <form method="post" action="contact.php">
 <div class="container">
   <form action="/action_page.php">

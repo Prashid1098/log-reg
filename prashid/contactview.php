@@ -67,11 +67,33 @@ a:hover{
     background-color:black;
     color:yellow;
 }
+.topnav a{
+float: right;
+display: block;
+color: black;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+margin: 5px;
+overflow:hidden;
+background-color: #e9e9e9;
+}
+.topnav a:hover{
+background-color:black;
+color:yellow;
+}
 </style>
 <title>View Contacts</title>
 </head>
 <body>
-<h1>View Your Saved Contacts</h1>
+<div class="topnav">
+<a class="active" href="diary.php">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="contact.php">CONTACT</a>
+<a href="diarypage.php">RETURN TO DIARY</a>
+</div>
+<br><br><br>
+<h1>VIEW YOUR SAVED CONTACTS</h1>
 <p id="se"><b>Search your saved contacts by first or last name</b></p>
 <br>
 <form action="contactview.php" method="POST" style="background-color:yellow">
@@ -88,7 +110,7 @@ if(isset($_POST['subt']))
 {
 $firstname=($_POST['firstname']);  
 $lastname=($_POST['lastname']); 
-$query2 = " SELECT * FROM contacts WHERE firstname='$firstname' OR lastname='$lastname' "; 
+$query2 = " SELECT * FROM contacts WHERE firstname='$firstname' AND lastname='$lastname' "; 
 $query_run = mysqli_query($conn,$query2);
 ?>
 <form action="contactview.php" method="POST">
@@ -132,7 +154,6 @@ else
 }
 ?>
 </div>
-<a href="contact.php" class="return">RETURN</a>
 </body>
 </html>
 
